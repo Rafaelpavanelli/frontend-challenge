@@ -1,117 +1,84 @@
-<p align="center">
-  <img src="https://github.com/datasmartlab/frontend-challenge/blob/main/.github/assets/logo.png" height="150" width="150" alt="Datasmart" />
-</p>
+<h1 align="center">API <span color="red">Marvel</span></h1>
+<img src="https://img.shields.io/static/v1?label=Create With&message=Next&color=000000&style=for-the-badge&logo=ghost"/>
 
-<h3 align="center">Datasmart</h3>
 
-<p align="center">Desafio para os candidatos à vaga de desenvolvedor Frontend na Datasmart.</p>
+<p>Marvel hero website consuming the Marvel API. </p>
+<ul>
+    <p>Libs used</p>
+    <li> <a href="https://mui.com/material-ui/">Material Ui</a> </li>
+    <li> <a href="https://swiperjs.com/">Swiper</a> </li>
+    <li> <a href="https://storybook.js.org/">Story book</a> </li>
+    <li> <a href="https://styled-components.com/">Styled components</a> </li>
+</ul>
+<p>The entire application has documentation of its components created to facilitate maintenance and make the application scalable. All Api documentation was used, allowing the project to have the opportunity to also display its comics</p>
 
-<p align="center">:pushpin: Local de trabalho: Avaré - SP</p>
+<h2>Documentation</h2>
+<p>First, you have to use the "npm run dev" command</p>
 
-<br>
+```bash
 
-<div align="center">
-  <a href="#memo-apresentação">Apresentação</a>   |   <a href="#clipboard-instruções">Instruções</a>   |   <a href="#wrench-especificações-técnicas">Especificações técnicas</a>   |   <a href="#gear-especificações-funcionais">Especificações funcionais</a>   |   <a href="#heavy_check_mark-o-que-será-avaliado">O que será avaliado?</a>   |   <a href="#question-dúvidas">Dúvidas</a>
-</div>
+--npm run dev
+```
 
-<br>
+<p>now you must create a file called ".env.local" with the parameters</p>
 
-## :memo: Apresentação
+<p color="graysmoke">.env.local</p>
 
-O desafio é desenvolver uma aplicação responsiva consumindo os dados da API da Marvel, seguindo todas as especificações abaixo.
+```json
 
-Esse desafio é um teste de nivelamento e para avaliarmos o quão bom você é :)
+NEXT_PUBLIC_API_KEY= "You API public key get in marvel.com"
+NEXT_PUBLIC_API_PRIVATE_KEY="You API private key get in marvel.com"
+```
 
-O desafio é público e todos os interessados que fizerem pull request receberão um feedback da nossa equipe.
+<p>Now you need to type the command 'npm run dev' in your terminal </p>
 
-Esperamos que todas as pessoas que queiram trabalhar conosco tentem realizá-lo.
+```bash
 
-A Datasmart trabalha sempre com feedbacks construtivos e, portanto, daremos sempre uma atenção especial para todos que submeterem o teste. Vale a pena tentar! :)
+--npm run dev
+```
+<p>Now your application is running on  <a href="localhost:3000">port 3000</a></p>
 
-## :clipboard: Instruções
 
-1. Faça um fork desse projeto;
+<p>The application uses the <a href="https://storybook.js.org/">storyBook</a> lib to document its components. To access them you must type "npm run storybook" in your terminal</p>
 
-2. Crie uma branch para o seu desafio no padrão: `git checkout -b frontend-challenge/seu-nome-sobrenome`;
+```bash
 
-3. Realize o desafio seguindo a seção de especificações;
+--npm run storybook
+```
 
-4. Crie um README com uma descrição e instruções para compilar e rodar o projeto;
-
-5. Adicione seu desafio para transferência `git add .`;
-
-6. Faça commit do seu desafio `git commit -m 'Challenge'`;
-
-7. Faça o push da branch: `git push origin frontend-challenge/seu-nome-sobrenome`;
-
-8. Abra um pull request com o nome `Challenge: Seu Nome Sobrenome`;
-
-9. Envie um email para `marcos@datasmart.com.br` com o título: `Desenvolvedor Frontend - Seu Nome Sobrenome`. Adicione seu telefone, LinkedIn, seu perfil do GitHub e em anexo seu currículo.
-
-## :wrench: Especificações técnicas
-
-- Utilizar framework ReactJS;
-
-- Usar Redux para estado dos componentes;
-
-- Utilizar Material UI para design;
-
-- Usar styled-components para CSS;
-
-- Mobile first e responsivo;
-
-- Cores, layout e imagens são livres para sua criatividade;
-
-- Utilizar a [API da Marvel](https://developer.marvel.com) para consumir os dados. É necessário se cadastrar no site e obter suas chaves de API.
-
-## :gear: Especificações funcionais
-
-### Tela Inicial
-
-- Essa tela terá um cabeçalho com o nome da aplicação e uma listagem de personagens vindos da API da Marvel.
-
-- O retorno desta requisição da API com a lista dos personagens deve ser gravado no Redux.
-
-- A listagem deve ser construída consumindo o estado do Redux.
-
-- A listagem deve possuir os campos: thumbnail, nome e um link para a página de detalhes do personagem.
-
-- Essa página deverá ter paginação, utilizando os recursos de paginação da API.
-
-### Tela de Detalhes
-
-- O usuário ao clicar em algum personagem, ele irá para a tela de detalhes. Ao entrar nesta tela, deve ser feito uma nova requisição para consumir os dados deste personagem e exibir em uma lista, os detalhes não precisam serem gravados no Redux.
-
-- A partir desse retorno, deve-se montar na tela uma listagem com os campos: nome, descrição, número de histórias em quadrinhos (comics), séries (series) e histórias (stories).
-
-- Essa tela deve ter um botão para voltar à tela inicial.
-
-## :heavy_check_mark: O que será avaliado?
-
-- Conhecimento do framework React e suas bibliotecas utilizadas;
-
-- Boas práticas com o código (lint, indentação, padrões, etc);
-
-- Organização e estrutura do projeto;
-
-- Código HTML, CSS e Javascript;
-
-- Uso de componentização;
-
-- Uso do Git;
-
-- Design e criatividade;
-
-- Perfomance;
-
-- Documentação.
-
-## :question: Dúvidas
-
-Em caso de dúvidas, crie uma issue ou envie um e-mail para `marcos@datasmart.com.br`.
-
-Boa sorte!
-
+### Autor
 ---
 
-Desenvolvido com 💖 por Datasmart
+<a href="https://www.linkedin.com/in/rafael-pavanelli-59807a1a4/">
+ <img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/C4E03AQG4-sH4Ckrxfw/profile-displayphoto-shrink_400_400/0/1653415946676?e=1711584000&v=beta&t=OQSjx4edSLoxN14uvRIxmcW27N_UXvZNQQgLqYoZBQY" width="100px;" alt=""/>
+ <br />
+ <sub><b>Rafael Pavanelli</b></sub></a> <a href="https://www.linkedin.com/in/rafael-pavanelli-59807a1a4/" title="Linkedin">🚀</a>
+
+
+Feito com ❤️ por Rafael Pavanelli 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-RafaelPavanelli-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-pavanelli-59807a1a4/)](https://www.linkedin.com/in/rafael-pavanelli-59807a1a4/) 
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gvxvvfbgx@gmail.com)](mailto:gvxvvfbgx@gmail.com)
+[![Github Badge](https://img.shields.io/badge/-Github-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gvxvvfbgx@gmail.com)](mailto:gvxvvfbgx@gmail.com)
+
+MIT License
+
+Copyright (c) <2024> Rafael Pavanelli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files "Marvel API Site", to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
