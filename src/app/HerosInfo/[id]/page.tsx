@@ -225,7 +225,7 @@ export const Heros = ({ params }: { params: { id: string } }) => {
             >
               {characterid.data.results[0].urls.map(
                 (url: any, index: number) => (
-                  <Link href={url.url} style={{ textDecoration: "none", color: 'whitesmoke'}}>
+                  <Link key={index} href={url.url} style={{ textDecoration: "none", color: 'whitesmoke'}}>
                     <Typography key={index} variant="h5" color="whitesmoke">
                       {url.type}
                     </Typography>
